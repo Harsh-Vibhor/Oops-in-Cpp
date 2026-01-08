@@ -1,0 +1,43 @@
+There are four pillars of OOP 🏛️
+One of them is Encapsulation.
+
+🔹 Encapsulation means wrapping data members (variables) and methods (functions) together into a single unit called a class 📦.
+
+It is mainly used to achieve data hiding 🔒.
+
+👉 In simple words:
+Encapsulation decides what data should be visible and what data should be hidden from the outside world.
+
+Understanding with a real-life example 🏦
+
+Think of a banking system.
+
+An account has:
+
+Account ID
+
+Username
+
+Password
+
+Balance
+
+Now, as a user:
+
+✅ You can see account ID and username
+
+❌ You should NOT directly access password and balance
+
+So what do we do? 🤔
+We keep password and balance as private 🔒
+This prevents them from being accessed directly from outside the class.
+
+If needed, we provide public methods (like checkBalance() or deposit()) to access or modify them safely 🛡️.
+
+This way:
+
+Data stays secure
+
+Direct misuse is prevented
+
+Access is controlled
