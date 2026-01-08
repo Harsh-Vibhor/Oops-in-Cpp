@@ -1,0 +1,39 @@
+Access Specifiers in C++
+
+Access specifiers control who can access the data members and member functions of a class.
+
+There are three access specifiers:
+
+🔒 Private
+
+Accessible only inside the class
+
+❌ Not accessible outside
+
+❌ Not accessible by derived classes
+
+Used to protect internal data
+
+🌍 Public
+
+Accessible from anywhere
+
+Used to interact with the class from outside
+
+Acts as the interface of the class
+
+🛡 Protected
+
+Accessible inside the class
+
+Accessible by derived (child) classes
+
+❌ Not accessible from outside using objects
+
+In C++, class members are private by default 🔒
+So if you don’t write any access specifier, the properties and methods cannot be accessed from outside the class.
+
+This default behavior helps in data hiding and keeps the code safe 🛡️.
+
+✨ Why access specifiers matters?
+Access specifiers help keep code secure, organized, and easy to maintain — which is why they’re heavily used in real-world C++ projects.
