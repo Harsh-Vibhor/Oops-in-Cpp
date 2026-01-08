@@ -1,0 +1,58 @@
+📌 Introduction to Object-Oriented Programming (OOP)
+
+Object-Oriented Programming (OOP) is a programming paradigm(i.e. way of writing code) that organizes code by modeling real-world entities using classes and objects. It provides a structured and modular way to write programs, making them easier to understand, maintain, and scale.
+
+In real-world software development and organizations, OOP is widely used because it reflects how real-world systems work and helps manage complex applications efficiently.
+
+📘 Class and Object Concept
+
+A class is a blueprint or template that defines the properties (data) and behaviors (functions) of an object.
+
+An object is a real instance of a class created using that blueprint.
+
+🔹 Real-World Example
+
+Consider a University Faculty Management System.
+
+To store faculty information, we need details like:
+
+Name
+
+Department
+
+Subject
+
+Instead of writing separate code for each faculty member, we define a Faculty class that acts as a blueprint.
+
+class Faculty {
+    string name;
+    string department;
+    string subject;
+};
+
+
+Using this class, we can create multiple faculty objects, each representing an individual faculty member with different values.
+
+Here:
+
+Class → Faculty (blueprint)
+
+Objects → Individual faculty members
+
+Benefit → Code reuse, consistency, and easier maintenance
+
+✅ Benefits of OOP
+
+Code reusability
+
+Better organization and readability
+
+Easier maintenance and scalability
+
+Real-world problem modeling
+
+Reduced code duplication
+
+🔚 Summary
+
+OOP allows us to write clean, reusable, and organized code by using classes as blueprints and objects as real-world entities created from those blueprints.
