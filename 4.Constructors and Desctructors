@@ -1,0 +1,173 @@
+🏗 Constructors in C++
+
+Constructors are special member functions that are automatically called when an object is created 🔁.
+They are mainly used for initializing data members.
+
+✨ Key points about constructors:
+
+Have the same name as the class
+
+❌ Do not have a return type (not even void)
+
+Are called only once, at the time of object creation
+
+Used to initialize variables
+
+Run after memory for the object is allocated
+
+🔁 Constructor Overloading
+
+A class can have multiple constructors, but their parameter lists must be different.
+This is called constructor overloading 🔄.
+
+📌 Types of Constructors
+
+1️⃣ Non-Parameterized Constructor
+
+Takes no arguments
+
+Used for default initialization
+
+2️⃣ Parameterized Constructor
+
+Takes parameters
+
+Used to initialize objects with custom values
+
+3️⃣ Copy Constructor
+
+Used to copy data from one object to another
+
+Automatically created by the compiler if not defined
+
+Syntax usually looks like:
+ClassName(const ClassName &obj)
+
+📌 Purpose:
+Create a new object as a copy of an existing object.
+
+👉 this Pointer
+
+this is a special pointer in C++ that points to the current object 🧭.
+
+It is mainly used:
+
+To distinguish between data members and parameters with the same name
+
+To refer to the calling object
+
+📋 Shallow Copy vs Deep Copy
+
+🔹 Shallow Copy
+
+Copies all member values as they are
+
+If the object has pointers, only the pointer address is copied
+
+Multiple objects may point to the same memory ⚠️
+
+🔹 Deep Copy
+
+Copies member values
+
+Also creates separate copies of dynamically allocated memory
+
+Each object has its own independent memory ✅
+
+⚡ Quick Summary
+
+Constructors initialize objects 🏗
+
+Constructor overloading allows flexibility 🔄
+
+Copy constructor duplicates objects 📄
+
+this points to the current object 👉
+
+Deep copy is safer than shallow copy when dynamic memory is involved 🛡️
+
+🧹 Destructors in C++
+
+Destructors are special member functions in C++ that are used to clean up resources used by an object 🧼.
+
+They are automatically called when an object is destroyed.
+
+🔑 Key Points about Destructors
+
+🧾 A destructor:
+
+Has the same name as the class, but with a tilde (~) before it
+
+Has no return type
+
+Takes no parameters
+
+Is called automatically when the object goes out of scope or is deleted
+
+🧠 Important Clarifications
+
+When an object is destroyed:
+
+The memory of the object itself is freed automatically by C++
+
+You do NOT need to free that memory manually
+
+What the destructor actually does 🧹:
+
+It is used to clean up resources that the object was using
+
+These resources include:
+
+Memory allocated using new
+
+Open files
+
+Network connections
+
+Any external resources
+
+👉 Important rule:
+If you used new inside a class, you must use delete inside the destructor.
+
+Simple analogy 🏠
+
+Think of an object as a rented house:
+
+When you leave the house, the house is returned automatically 🏡
+
+But you must clean your stuff (furniture, trash, belongings)
+
+The destructor is the cleanup step before leaving.
+
+One-line version (perfect for notes/interview):
+
+A destructor does not free the object’s memory; it is used to release resources like dynamically allocated memory before the object is destroyed.
+Network connections, etc.
+
+⚙ Default Destructor
+
+If you do not create a destructor, the compiler provides a default destructor 🤖
+
+The default destructor does NOT free dynamically allocated memory
+
+👉 If your class uses new, you must use delete inside the destructor to avoid memory leaks 🚰
+
+Example idea:
+
+new → allocate memory
+
+delete → free memory (inside destructor)
+
+⏱ When is Destructor Called?
+
+A destructor is called:
+
+When an object goes out of scope
+
+When an object is destroyed using delete
+
+At program termination (for static objects)
+
+⚡ One-line Takeaway
+
+Destructors are used to clean up resources and are automatically called when an object is destroyed, but dynamic memory must be freed manually inside them.
