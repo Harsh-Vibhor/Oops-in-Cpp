@@ -115,3 +115,201 @@ Destructor: Child → Parent
 
 
 3) Polymorphism
+🔁 Polymorphism in C++
+
+Polymorphism means the ability of an object or function to behave in different ways depending on the situation.
+
+In simple words:
+➡️ Same name, different behavior.
+
+🧠 Simple Example
+
+If a class has:
+
+One constructor with parameters
+
+One constructor without parameters
+
+Then we can create different objects using different constructors.
+This is an example of polymorphism.
+
+📌 Types of Polymorphism
+
+There are two types:
+
+1️⃣ Compile-Time Polymorphism
+2️⃣ Run-Time Polymorphism
+
+⚙ Compile-Time Polymorphism
+
+Here, the decision of which function to run is made at compile time 🛠️.
+
+Examples:
+
+Constructor Overloading
+
+Function Overloading
+
+Operator Overloading
+
+📌 Function Overloading means:
+Same function name, but different parameters.
+
+Example idea:
+add(int a, int b)
+add(int a, int b, int c)
+
+⏱ Run-Time Polymorphism
+
+Here, the decision of which function to run is made at run time ⏳.
+
+Examples:
+
+Function Overriding
+
+Virtual Functions
+
+📌 Function Overriding means:
+Parent and child classes have the same function name, but the child provides a different implementation.
+
+🧬 Virtual Functions
+
+A virtual function is a function:
+
+Declared in the base (parent) class
+
+Re-defined in the derived (child) class
+
+Called based on the object type at runtime
+
+Key points:
+
+Uses the virtual keyword
+
+Supports run-time polymorphism
+
+Decision is made during program execution
+
+Enables dynamic binding
+
+
+4) Abstraction
+🎭 Abstraction in C++
+
+Abstraction means:
+👉 Hiding unnecessary details
+👉 Showing only what is important
+
+In simple words:
+The user sees what to do, not how it is done.
+
+Ways to Achieve Abstraction
+
+1️⃣ Using Access Specifiers
+
+private → hide internal details 🔒
+
+public → show required features 🌍
+
+2️⃣ Using Abstract Classes
+
+🧱 Abstract Class
+
+An abstract class is a base class that:
+
+Cannot be used to create objects ❌
+
+Is meant to be inherited by other classes
+
+Contains pure virtual functions
+
+⚙ Pure Virtual Function
+
+A pure virtual function is a virtual function set to = 0.
+
+It means:
+
+The base class forces the child class to implement it
+
+No object of the base class can be created
+
+Example idea:
+virtual void show() = 0;
+
+📌 Static Keyword
+
+🔹 Static Variable inside a Function
+
+Created only once
+
+Keeps its value between function calls
+
+Exists for the entire program life
+
+🔹 Static Variable inside a Class
+
+Shared by all objects
+
+Only one copy exists
+
+Not created separately for each object
+
+🤝 Friend Keyword in C++
+
+The friend keyword allows another class or function to access the private and protected members of a class.
+
+Normally:
+
+Private data = hidden 🔒
+
+Protected data = limited access
+
+But with friend:
+
+Access is granted specially 🛂
+
+Why Use Friend?
+
+Sometimes two classes/functions:
+
+Work very closely
+
+Need to share internal data
+
+So we use friend to allow controlled access.
+
+Key Points about Friend
+
+Friend is not a member of the class
+
+It can access private + protected data
+
+Friendship is not mutual
+
+Friendship is not inherited
+
+Simple Example Idea 🧠
+
+If:
+
+Class A has private data
+
+Function B needs to access it
+
+Then:
+
+We make Function B a friend of Class A
+
+Now Function B can access A’s private data.
+
+⚡ Quick Summary
+
+Abstraction = show important, hide details 🎭
+
+Abstract class = cannot create objects 🧱
+
+Pure virtual function = must be implemented ⚙
+
+Static = shared or lifetime-long ♻️
+
+Friend = special access to private data 🤝
