@@ -1,4 +1,6 @@
 There are four pillars of OOP 🏛️
+
+1) Encapsulation
 One of them is Encapsulation.
 
 🔹 Encapsulation means wrapping data members (variables) and methods (functions) together into a single unit called a class 📦.
@@ -41,3 +43,72 @@ Data stays secure
 Direct misuse is prevented
 
 Access is controlled
+
+
+2) Inheritance
+🧬 Inheritance in C++
+
+Inheritance means when the properties (data) and methods (functions) of a parent/base class are passed to a child/derived class.
+
+📌 Main benefit:
+♻️ Code reusability – we don’t have to write the same code again.
+
+🔁 Order of Constructor & Destructor Calls
+
+🏗 Constructor Call Order:
+Parent class constructor → Child class constructor
+
+🧹 Destructor Call Order:
+Child class destructor → Parent class destructor
+
+Why?
+Because the child depends on the parent, so the parent must be ready first, and cleaned last.
+
+🔐 Modes of Inheritance
+
+There are three modes of inheritance:
+
+🌍 Public
+
+Public members of parent stay public in child
+
+🛡 Protected
+
+Public & protected members become protected in child
+
+🔒 Private
+
+Public & protected members become private in child
+
+These modes control how accessible the inherited members are.
+
+🏗 Types of Inheritance
+
+1️⃣ Single Inheritance
+One parent → One child
+Simple and common.
+
+2️⃣ Multilevel Inheritance
+Parent → Child → Grandchild
+Inheritance happens at multiple levels.
+
+3️⃣ Multiple Inheritance
+One child inherits from multiple parents.
+
+4️⃣ Hierarchical Inheritance
+One parent → Multiple children.
+
+5️⃣ Hybrid Inheritance
+Combination of two or more types of inheritance.
+
+⚡ Quick Summary
+
+Inheritance = reusing parent class features 🧬
+
+Saves time & code ♻️
+
+Constructor: Parent → Child
+
+Destructor: Child → Parent
+
+5 main types of inheritance
