@@ -112,3 +112,6 @@ Constructor: Parent → Child
 Destructor: Child → Parent
 
 5 main types of inheritance
+
+
+3) Polymorphism
